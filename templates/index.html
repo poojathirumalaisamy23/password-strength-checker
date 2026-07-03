@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecurePass AI</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🔐 SecurePass AI</h1>
+
+    <p class="subtitle">
+        Advanced Password Strength Analyzer
+    </p>
+
+
+   <div class="password-box">
+
+<input 
+type="password"
+id="password"
+placeholder="Enter your password">
+
+<button type="button" id="togglePassword">
+👁️
+</button>
+
+</div>
+<button type="button" id="generatePassword">
+Generate Strong Password
+</button>
+<button type="button" id="copyPassword">
+📋 Copy Password
+</button>
+
+        <<button type="button">
+    Analyze Password
+</button>
+
+
+        <div class="strength">
+
+            Password Strength
+
+            <div class="bar">
+
+                <div class="progress"></div>
+
+            </div>
+
+        </div>
+<p id="scoreText">Password Score: 0/100</p>
+
+<p id="crackTime">
+Crack Time: Waiting...
+</p>
+<div class="suggestions">
+
+<h3>Security Suggestions</h3>
+
+<p id="suggestionText">
+Start typing a password...
+</p>
+
+</div>
+        <div class="result">
+
+            <p>✔ Length Check</p>
+            <p>✔ Uppercase Check</p>
+            <p>✔ Number Check</p>
+            <p>✔ Symbol Check</p>
+
+        </div>
+
+
+    </div>
+
+
+
+<script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
